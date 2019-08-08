@@ -6,7 +6,6 @@
 }
 .blogText {
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 .blogAuthor {
     display: flex;
@@ -21,6 +20,7 @@
     margin:10px;
     padding:20px 40px;
 }
+/* Styles for all the buttons in the post.html page */
 .postBtn{
     display: block;
     color:white;
@@ -36,13 +36,17 @@
     transition: 0.4s ease;
     box-shadow: 3px 14px 20px -6px black;
 }
+
+/* To hide the Save button */
 #postSaveBtn{
     display: none;
 }
+/* CSS for active editable blog content */
 .editable {
     outline:2px solid #BCD2FD;
     background: #f2f2f2;
   }
+/* CSS for Like Button */
 #likeBtn{
     padding:10px 30px;
 }
@@ -50,6 +54,7 @@
     margin:10px;
     padding:20px 40px;
 }
+/* CSS for Comment Section */
 #commentBtn{
     margin-top:10px;
 }
@@ -63,9 +68,11 @@
     padding: 15px;
 }
 
-/* Modal CSS */
+/* Styles for the MODALS */
+
+/* Styles for the Modal Background */
 .modal{
-    display:flex;
+    display:flex; /*To always have the modal appear at the center of the screen*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -85,6 +92,8 @@
     -webkit-animation-name: fadeIn; /* Fade in the background */
     -webkit-animation-duration: 0.4s;
  }
+
+ /*Styling for Cross Icon in Modals*/
  .closeModal{
     color:grey;
     font-size: 30px;
@@ -95,6 +104,8 @@
     cursor: pointer;
     color:black;
  }
+
+ /* Styles for the actual Modal Box */
  .ModalContent{
     display: flex;
     width:23%;
@@ -107,7 +118,7 @@
     -webkit-animation-duration: 0.4s;
  }
  #signInModalContent{
-    transform: translate(0%, -17%);
+    transform: translate(0%, -17%); /*Adjusting the position of sign in modal for better optimization*/
  }
  .ModalForm{
     width:80%;
@@ -151,7 +162,6 @@
     width:80%;
  }
 
-/* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
  /* Add Animation */
  @-webkit-keyframes slideIn {
     from {bottom: -300px; opacity: 0} 
@@ -172,6 +182,7 @@
     from {opacity: 0} 
     to {opacity: 1}
   }
+  /* Media Queries */
   @media only screen and (max-width: 1200px) {
     .ModalContent{
        width:40%;

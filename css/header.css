@@ -9,6 +9,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     margin-left: 5px;
     cursor: pointer;
 }
+/*Styles for ScriBBler*/
 #headerLogoTxt{
     color:blue;
     margin-top:0px;
@@ -16,11 +17,13 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     font-family: 'Satisfy';
     font-weight:normal;
 }
+/*Styles for Explore.Imagine.Create.*/
 #headerSubLogoTxt{
     margin-top: 0px;
     font-family: 'Marck Script';
     font-weight: normal;
 }
+/*Styles for Sign up and Sign in buttons*/
 .headerButtons{
     margin:10px 5px 5px 5px;
     color:white;

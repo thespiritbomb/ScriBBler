@@ -54,10 +54,11 @@
     padding-top: 10px;
     font-size: 30px;
 }
+
 .post-desc{
     margin-bottom:30px  !important;
     height:55px;
-    overflow: hidden;
+    overflow: hidden; /*To hide the blog description partially*/
 }
 
 body {
@@ -78,7 +79,9 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
-/* HEADER MODAL CSS */
+/* Styles for the MODALS */
+
+/* Styles for the Modal Background */
 .modal{
     display:flex;
     flex-direction: column;
@@ -100,6 +103,8 @@ body {
     -webkit-animation-name: fadeIn; /* Fade in the background */
     -webkit-animation-duration: 0.4s;
  }
+ 
+/*Styling for Cross Icon in Modals*/
  .closeModal{
     color:grey;
     font-size: 30px;
@@ -110,6 +115,8 @@ body {
     cursor: pointer;
     color:black;
  }
+ 
+/* Styles for the actual Modal Box */
  .ModalContent{
      display: flex;
     width:23%;
@@ -122,7 +129,7 @@ body {
    -webkit-animation-duration: 0.4s;
  }
  #signInModalContent{
-    transform: translate(0%, -17%);
+    transform: translate(0%, -17%);/*Adjusting the position of sign in modal for better optimization*/
  }
  .ModalForm{
     width:80%;
@@ -165,6 +172,7 @@ body {
  hr{
     width:80%;
  }
+ /* Styles for the Delete Post Modal */
  .deleteModalBtn{
      padding:12px 55px;
      color:white;
@@ -212,6 +220,7 @@ body {
     from {opacity: 0} 
     to {opacity: 1}
   }
+  /* Media Queries */
   @media only screen and (max-width: 1200px) {
     .post {
         width: 30%;

@@ -12,7 +12,7 @@ body{
    display: block;
 } 
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
-
+/* Styles for the CREATE POST button and ALL POSTS button */
 .postsBtn{
    color:black;
    background-color: #CFB53B;
@@ -34,8 +34,11 @@ body{
    justify-content: center;
    align-items: center;
 }
+/* Styles for the MODALS */
+
+/* Styles for the Modal Background */
 .modal{
-   display:flex;
+   display:flex; /*To always have the modal appear at the center of the screen*/
    flex-direction: column;
    justify-content: center;
    align-items: center;
@@ -54,7 +57,9 @@ body{
    -webkit-animation-name: fadeIn; /* Fade in the background */
    -webkit-animation-duration: 0.4s;
 }
-.closeModal{
+
+/*Styling for Cross Icon in Modals*/
+.closeModal{ 
    color:grey;
    font-size: 30px;
    font-weight: bolder;
@@ -64,6 +69,8 @@ body{
    cursor: pointer;
    color:black;
 }
+
+/* Styles for the actual Modal Box */
 .ModalContent{
    display: flex;
    width:23%;
@@ -76,7 +83,7 @@ body{
    -webkit-animation-duration: 0.4s;
 }
 #signInModalContent{
-   transform: translate(0%, -17%);
+   transform: translate(0%, -17%); /*Adjusting the position of sign in modal for better optimization*/
 }
 .ModalForm{
    width:80%;
@@ -119,7 +126,6 @@ label{
 hr{
    width:80%;
 }
-
 #newPostContent{
    background-color:lightgray;
    font-family: Arial, Helvetica, sans-serif;
@@ -134,7 +140,8 @@ hr{
 button{
    cursor: pointer;
 }
-/* Add Animation */
+
+/* Adding Animation */
 @-webkit-keyframes slideIn {
    from {bottom: -300px; opacity: 0} 
    to {bottom: 0; opacity: 1}
@@ -154,6 +161,8 @@ button{
    from {opacity: 0} 
    to {opacity: 1}
  }
+
+ /* Media Queries */
  @media only screen and (max-width: 1200px) {
     .ModalContent{
        width:40%;
