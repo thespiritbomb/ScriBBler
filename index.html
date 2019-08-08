@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Place all CSS for header in this file -->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+
+    <!-- Place all CSS for the rest of the elements in this file -->
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+
+	<!-- Place all CSS for fonts in this file -->
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+    <div id="main-container-div">
+
+        <div class="header">
+            <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+            <div id="headerLogoDiv">
+                <h1 id="headerLogoTxt">ScriBBler</h1>
+                <h4 id="headerSubLogoTxt">Explore. Imagine. Create.</h4>
+            </div>
+            <div id="headerBtnDiv">
+                <button class="headerButtons" id="headerSignIn">Sign In</button>
+                <button class="headerButtons" id="headerSignUp">Sign Up</button>
+            </div>
+        </div>
+        <div class="postButtonsDiv">
+
+            <!-- Insert code for All Posts & Create Post button here -->
+            <button class="postsBtn" id="allPostsBtn">All Posts</button>
+            <button class="postsBtn" id="createPostBtn">Create Post</button>
+
+        </div>
+    </div>
+
+    <div id="signUpModalDiv" class="modal">
+        <!-- Code for Sign Up Modal -->
+        <div class="ModalContent">
+                <div class="ModalHeader">
+                    <div></div>
+                    <h1 class="ModalHeadingText">Get Started</h1>
+                    <span class="closeModal">&times;</span>
+                </div>
+                <hr>
+                <div class="ModalForm">
+                    <form class="modal-form">
+                        <label for="signUpName">Full Name</label>
+                        <input type="text" name="" id="signUpName" placeholder="Enter Full Name" required>
+                        <label for="signUpUname">Username</label>
+                        <input type="text" name="" id="signUpUname" placeholder="Enter Username" required>
+                        <label for="signUpPwd">Password</label>
+                        <input type="password" name="" id="signUpPwd" placeholder="Enter Password" required>
+                        <label for="signUpPwdConfirm">Confirm Password</label>
+                        <input type="password" name="" id="signUpPwdConfirm" placeholder="Confirm Password" required>
+                        <button class="ModalBtn" id="signUpModalBtn">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+    </div>
+
+    <div id="signInModalDiv" class="modal">
+    	<!-- Code for Sign In modal -->
+        <div class="ModalContent" id="signInModalContent">
+                <div class="ModalHeader">
+                    <div></div>
+                    <h1 class="ModalHeadingText">Welcome Back!</h1>
+                    <span class="closeModal">&times;</span>
+                </div>
+                <hr>
+                <div class="ModalForm">
+                    <form class="modal-form">
+                        <label for="signInUname">Username</label>
+                        <input type="text" name="" id="signInUname" placeholder="Enter Username" required>
+                        <label for="signInPwd">Password</label>
+                        <input type="password" name="" id="signInPwd" placeholder="Enter Password" required>
+                        <button class="ModalBtn">Sign In</button>
+                    </form>
+                </div>
+                <div id="notMember">
+                    <p>Not a member? <a href="#" id="signInModalLink">Sign Up</a></p>
+                </div>
+            </div>
+    </div>
+
+    <div id="createPostModalDiv" class="modal">
+        <!-- Code for Create Posts Modal -->
+        <div class="ModalContent" id="createPostModalContent">
+                <div class="ModalHeader">
+                    <div></div>
+                    <h1 class="ModalHeadingText">Create a New Post</h1>
+                    <span class="closeModal">&times;</span>
+                </div>
+                <hr>
+                <div class="ModalForm">
+                    <form class="modal-form">
+                        <label for="newPostTitle">Post Title</label>
+                        <input type="text" name="" id="newPostTitle" placeholder="Enter Post Title" required>
+                        <label for="newPostContent">Post Content</label>
+                        <textarea name="" id="newPostContent" rows="10">Enter some content</textarea>
+                        <button class="ModalBtn" id="createPostModalBtn">Add Post</button>
+                    </form>
+                </div>
+            </div>   
+    </div>
+	<!-- Place all Javascript for header in this file -->
+	<script src="js\header.js"></script>
+	<!-- Place all Javascript for rest of the elements in this file -->
+    <script src="js\index.js"></script>
+
+</body>
+</html>

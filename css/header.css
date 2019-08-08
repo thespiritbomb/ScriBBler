@@ -1,0 +1,38 @@
+/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
+the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+#headerLogoDiv{
+    margin-left: 5px;
+    cursor: pointer;
+}
+#headerLogoTxt{
+    color:blue;
+    margin-top:0px;
+    margin-bottom: 0px;
+    font-family: 'Satisfy';
+    font-weight:normal;
+}
+#headerSubLogoTxt{
+    margin-top: 0px;
+    font-family: 'Marck Script';
+    font-weight: normal;
+}
+.headerButtons{
+    margin:10px 5px 5px 5px;
+    color:white;
+    background-color: blue;
+    padding: 10px 16px;
+    font-size: 9pt;
+    font-weight: bolder;
+    outline:none;
+    cursor: pointer;
+ }    
+ .headerButtons:hover{
+     transition: 0.4s ease;
+     color:blue;
+     background-color:white;
+ }

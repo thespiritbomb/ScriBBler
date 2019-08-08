@@ -1,0 +1,179 @@
+.blogTite {
+    font-size: 150%;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.blogText {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.blogAuthor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+    font-family: 'Niconne', cursive;
+    font-size: 30px;
+}
+.blogContent{
+    margin:10px;
+    padding:20px 40px;
+}
+.postBtn{
+    display: block;
+    color:white;
+    background-color: #EF3B65;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px -6px black;
+    padding:10px 15px;
+    font-size: 11pt;
+}
+.postBtn:hover{
+    transition: 0.4s ease;
+    box-shadow: 3px 14px 20px -6px black;
+}
+#postSaveBtn{
+    display: none;
+}
+.editable {
+    outline:2px solid #BCD2FD;
+    background: #f2f2f2;
+  }
+#likeBtn{
+    padding:10px 30px;
+}
+.blogFooter{
+    margin:10px;
+    padding:20px 40px;
+}
+#commentBtn{
+    margin-top:10px;
+}
+#commentTextarea{
+    margin-top:30px;
+    width:100%;
+}
+#readComments{
+    margin-top:20px;
+    background-color: lightgray;
+    padding: 15px;
+}
+
+/* Modal CSS */
+.modal{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display:none;
+    color:black;
+    position: fixed;
+    width:100%;
+    height:100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index:1;
+    font-family:'Abel';
+    font-weight: bolder;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+ }
+ .closeModal{
+    color:grey;
+    font-size: 30px;
+    font-weight: bolder;
+    float:right;
+ }
+ .closeModal:hover{
+    cursor: pointer;
+    color:black;
+ }
+ .ModalContent{
+    display: flex;
+    width:23%;
+    box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+ }
+ #signInModalContent{
+    transform: translate(0%, -17%);
+ }
+ .ModalForm{
+    width:80%;
+ }
+ .modal-form{
+    display:flex;
+   flex-direction: column;
+   justify-content: center;
+   width:100%;
+ }
+ input{
+    padding:10px;
+    background-color: lightgray;
+    border: none;
+ }
+ label{
+    margin:10px;
+ }
+ .ModalBtn{
+    margin-top:25px;
+    padding:10px;
+    background-color: #5EB762;
+    color:white;
+    border:none;
+    outline:none;
+ }
+ #signUpModalBtn{
+    margin-bottom: 25px;
+ }
+ .ModalBtn:hover{
+    cursor: pointer;
+ }
+ .ModalHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:80%; 
+ }
+ hr{
+    width:80%;
+ }
+
+/* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+ /* Add Animation */
+ @-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  @media only screen and (max-width: 1200px) {
+    .ModalContent{
+       width:40%;
+    }
+ }
